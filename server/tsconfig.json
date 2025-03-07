@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    /* Modules */
+    "rootDir": "src", 
+    "outDir": "dist",
+
+    /* Module Resolution */
+    "module": "CommonJS",
+    "target": "ES6",
+
+    /* TypeScript Strictness */
+    "strict": true,
+    "esModuleInterop": true, 
+    "resolveJsonModule": true, 
+    "skipLibCheck": true,
+
+    /* Node.js Types */
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "include": ["src"]
+}
